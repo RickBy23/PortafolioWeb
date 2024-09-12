@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ricardo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <!--<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>-->
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>RICARDO PALOMEQUE</h1>
+            <h2>Ingeniero de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/RickBy_official"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/BryanPalomeque"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ricardo-palomeque-5161b6285/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/+593989784873"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ricardo Palomeque.</span> Estudiante de la carrera de Ingeniería en Software en la Universidad ESPE con experiencia en ventas, atención al cliente, uso de programas (CodeBlocks, Dev, etc) y archivos de documentos. Persona polifuncional, con preferencia en el área de desarrollo de software y trato directo con el cliente. Conocimiento en desarrollo de software en la plataforma de odoo, lenguaje javascript, lenguaje python, lenguaje css, lenguaje html y xml. Persona con habilidades tanto en la farte backend como frontend.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            23-02-2005
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +593 98 978 4873
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            brpalomequeo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Alfredo Carpio Flores, Quito, 170803, Ecuador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Software development intern</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i>
+                            <span>SOFTWARE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>ROBÓTICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-users-between-lines"></i>
+                            <span>COWORKING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="Currículum Vitae Ricardo Palomeque.pdf">
+                Descargar CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Odoo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & XML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Soporte Técnico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ganas de Aprendizaje</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Software</h4>
+                        <span class="casa">Universidad de Las Fuerzas Armadas ESPE</span>
+                        <span class="fecha">Cursando actualmente</span>
+                        <p>Carrera enfocada en formar profesionales capaces de desarrollar y optimizar sistemas informáticos utilizando metodologías avanzadas y estándares internacionales. Los egresados adquieren competencias en diseño, desarrollo y gestión de software, con un enfoque en la eficiencia, creatividad y responsabilidad profesional, contribuyendo así al desarrollo económico y la competitividad en sectores productivos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachillerato General Unificado</h4>
+                        <span class="casa">Unidad Educativa Madre De La Divina Gracia</span>
+                        <span class="fecha">2022</span>
+                        <p>Culminación del Bachillerato General Unificado, un programa educativo que proporciona formación integral en áreas como ciencias, humanidades y matemáticas. Durante tres años de estudio, desarrollé competencias académicas y técnicas, así como habilidades para la resolución de problemas, el trabajo en equipo y el pensamiento crítico, preparándome para la educación superior y el ámbito profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Ethical Hacking</h4>
+                        <span class="casa">Academia Hacker Mentor</span>
+                        <span class="fecha">MZO 2024</span>
+                        <p>Curso de aprendizaje acerca del hacking ético y cyberseguridad basado en el aprendizaje con gaming.</p>
+                        <a href="Certificado Hacking Ético.pdf">CERTIFICADO<i class="fa-solid fa-download"></i></a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Pasante de Desarrollo en Software</h4>
+                        <span class="casa">Infinit Plus</span>
+                        <span class="fecha">04-04-2024 - Actualidad</span>
+                        <p>Como pasante de desarrollo de software, formo parte de un equipo dinámico y colaborativo donde trabajo bajo la guía de desarrolladores experimentados. Mi rol me permite participar activamente en proyectos innovadores, contribuyendo al diseño, desarrollo e implementación de soluciones en la plataforma Odoo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Polifuncional</h4>
+                        <span class="casa">The crab's Carbón y Leña</span>
+                        <span class="fecha">Junio - Agosto 2022</span>
+                        <p>esponsable de la atención a clientes mediante el servicio de mesero, camarero, bartender y ayudante de cocina.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <h3>Voluntareado</h3>
+                    <div class="item der">
+                        <h4>Voluntariado - Miembro activo</h4>
+                        <span class="casa">Asociación de Scouts del Ecuador</span>
+                        <span class="fecha">En. 2019 - Actualidad</span>
+                        <p>Participación en actividades grupales, organización y planificación de proyectos, realización de proyectos personales y grupales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Monitor</h4>
+                        <span class="casa">Cursos vacacionales Municipio de Quito</span>
+                        <span class="fecha">Sept. 2017 - Dic. 2018</span>
+                        <p>Responsable del cuidado, participacipon y animación tanto de niños y jóvenes durante los campamentos vacacionales organizados por el municipio de Quito.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION CONTACTO -->
+    <form action="https://formsubmit.co/brpalomequeo@gmail.com" method="POST">
+        <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input name="name" type="text" placeholder="Tú Nombre">
+                    <input name="phone" type="text" placeholder="Número telefónico">
+                    <input name="email" type="text" placeholder="Dirección de correo">
+                    <input name="description" type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                    <input type="hidden" name="_next" value="https://rickby23.github.io/PortafolioWebRicardo/">
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Alfredo Carpio Flores, Quito, 170803, Ecuador
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llámame: +593 98 978 4873
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: brpalomequeo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </form>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/RickBy_official"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/BryanPalomeque"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ricardo-palomeque-5161b6285/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/+593989784873"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
