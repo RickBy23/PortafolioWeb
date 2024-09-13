@@ -367,15 +367,6 @@ html{
     100%{width: 80%;}
 }
 
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
 .skills .skill .ganas{
     width: 0%;
     animation: 2s ganas forwards;
