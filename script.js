@@ -33,6 +33,7 @@ function efectoHabilidades(){
         habilidades[9].classList.add("trabajo");
         habilidades[10].classList.add("creatividad");
         habilidades[11].classList.add("ganas");
+
     }
 }
 
