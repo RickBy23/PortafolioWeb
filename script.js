@@ -34,13 +34,8 @@ function efectoHabilidades(){
         habilidades[10].classList.add("creatividad");
         habilidades[11].classList.add("dedicacion");
         habilidades[12].classList.add("ganas");
-
-
-
-
     }
 }
-
 
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
