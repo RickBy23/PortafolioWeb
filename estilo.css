@@ -376,6 +376,52 @@ html{
     0%{width: 0%;}
     100%{width: 100%;}
 }
+
+.skills .skill .analisis{
+    width: 0%;
+    animation: 2s analisis forwards;
+}
+@keyframes analisis {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .resolucion{
+    width: 0%;
+    animation: 2s resolucion forwards;
+}
+@keyframes resolucion {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .relaciones{
+    width: 0%;
+    animation: 2s relaciones forwards;
+}
+@keyframes relaciones {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .investigacion{
+    width: 0%;
+    animation: 2s investigacion forwards;
+}
+@keyframes investigacion {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+.skills .skill .actitud{
+    width: 0%;
+    animation: 2s actitud forwards;
+}
+@keyframes actitud {
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
