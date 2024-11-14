@@ -674,6 +674,15 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    /* Hacer que el botón de idioma se ubique de manera más centrada en pantallas más pequeñas */
+    .check {
+        font-size: 12px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        padding: 8px 16px; /* Reducir los márgenes internos del botón */
+        margin-left: 0; /* Eliminar margen izquierdo */
+        margin-top: 10px; /* Añadir un poco de margen en la parte superior */
+        display: block; /* Hacerlo bloque para que se alinee verticalmente */
+        margin: 0 auto; /* Centrar el botón */
+    }
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
@@ -709,4 +718,27 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    /* Ajustes adicionales para el botón en pantallas aún más pequeñas */
+    .check {
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+        padding: 6px 12px; /* Ajustar los márgenes internos */
+        margin-top: 10px; /* Añadir margen superior */
+    }
+}
+
+/* Estilo del botón de idioma */
+.check {
+    background-color: #1CB698;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.check:hover {
+    background-color: #16a085;
 }

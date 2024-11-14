@@ -1,26 +1,28 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
+// Función que oculta o muestra el menú
 function mostrarOcultarMenu(){
     if(menuVisible){
-        document.getElementById("nav").classList ="";
+        document.getElementById("nav").classList = "";
         menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
+    } else {
+        document.getElementById("nav").classList = "responsive";
         menuVisible = true;
     }
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+    // Oculto el menú una vez que selecciono una opción
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
+
+// Función que aplica las animaciones de las habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
+        // Agregar las clases de animación a las habilidades
         habilidades[0].classList.add("odoo");
         habilidades[1].classList.add("htmlxml");
         habilidades[2].classList.add("python");
@@ -38,11 +40,46 @@ function efectoHabilidades(){
         habilidades[14].classList.add("relaciones");
         habilidades[15].classList.add("investigacion");
         habilidades[16].classList.add("actitud");
-
     }
 }
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
+// Detecto el scrolling para aplicar la animación de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
-} 
+}
+
+// Leer el idioma desde el almacenamiento local o por defecto en inglés
+let currentLanguage = localStorage.getItem('language') || 'en';
+
+// Cambiar el texto del botón basado en el idioma actual
+function actualizarBotonIdioma() {
+    const button = document.getElementById('language-toggle');
+    button.textContent = currentLanguage === 'en' ? 'English' : 'Español';
+}
+
+// Función para cambiar de idioma y redirigir a la página correspondiente
+function toggleLanguage() {
+    // Cambiar el idioma
+    currentLanguage = currentLanguage === 'en' ? 'es' : 'en';
+
+    // Guardar el idioma en el almacenamiento local
+    localStorage.setItem('language', currentLanguage);
+
+    // Actualizar el texto del botón
+    actualizarBotonIdioma();
+
+    // Redirigir a la página correspondiente
+    if (currentLanguage === 'es') {
+        window.location.href = 'index_es.html';
+    } else {
+        window.location.href = 'index.html';
+    }
+}
+
+// Inicializar el evento para el botón de cambio de idioma
+document.addEventListener("DOMContentLoaded", () => {
+    // Actualizar el botón con el idioma almacenado
+    actualizarBotonIdioma();
+
+    document.getElementById('language-toggle').addEventListener('click', toggleLanguage);
+});

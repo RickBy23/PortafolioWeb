@@ -12,24 +12,26 @@
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Ricardo</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <a href="#">Ricardo</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button id="language-toggle" class="check">English</button> <!-- Botón para cambiar idioma -->
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
@@ -38,7 +40,7 @@
                 <img src="img/hero.png" alt="">
             </div>
             <h1>RICARDO PALOMEQUE</h1>
-            <h2>Ingeniero de Software</h2>
+            <h2>Software Engineer</h2>
             <div class="redes">
                 <a href="https://github.com/RickBy23/"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ricardo-palomeque-5161b6285/"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -50,20 +52,20 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Ricardo Palomeque.</span> Estudiante de la carrera de Ingeniería en Software en la Universidad ESPE con experiencia en ventas, atención al cliente, uso de programas (Pycharm, Dev, Odoo, etc) y archivos de documentos. Persona polifuncional, con preferencia en el área de desarrollo de software y trato directo con el cliente. Conocimiento en desarrollo de software en la plataforma de odoo, lenguaje javascript, lenguaje python, lenguaje css, lenguaje html y xml. Persona con habilidades tanto en la farte backend como frontend.</p>
+            <h2>About Me</h2>
+            <p><span>Hi!, I'm Palomeque.</span> Software Engineering student at ESPE University with experience in sales, customer service, use of programs (Pycharm, Dev, Odoo, etc.) and document files. Multifunctional person, with preference in the area of ​​software development and direct customer service. Knowledge of software development on the odoo platform, javascript language, python language, css language, html and xml language. Person with skills in both the backend and frontend.</p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Personal Data</h3>
                     <ul>
                         <li>
-                            <strong>Nacimiento</strong>
+                            <strong>Birth</strong>
                             23-02-2005
                         </li>
                         <li>
-                            <strong>Teléfono</strong>
+                            <strong>Phone</strong>
                             +593 98 978 4873
                         </li>
                         <li>
@@ -72,22 +74,22 @@
                         </li>
                         <li>
                             <strong>Website</strong>
-                            <a href="https://rickby23.github.io/PortafolioWeb/">Portafolio Web</a>
+                            <a href="https://rickby23.github.io/PortafolioWeb/">Web Portfolio</a>
                         </li>
                         <li>
-                            <strong>Dirección</strong>
+                            <strong>Home Address</strong>
                             Alfredo Carpio Flores, Quito, 170803, Ecuador
                         </li>
                         <li>
-                            <strong>Cargo</strong>
-                            <span>Software development intern</span>
+                            <strong>Workstation</strong>
+                            <span>Software developer</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Interest</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-brands fa-python"></i>
@@ -95,7 +97,7 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-robot"></i>
-                            <span>ROBÓTICA</span>
+                            <span>ROBOTICS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-users-between-lines"></i>
@@ -103,31 +105,31 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MÚSICA</span>
+                            <span>MUSIC</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <span>TRAVEL</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-dumbbell"></i>
-                            <span>DEPORTE</span>
+                            <span>SPORT</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
+                            <span>BOOKS</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
+                            <span>PHOTOS</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
             <button>
-                <a href="Currículum Vitae Ricardo Palomeque actualizado.pdf">
-                Descargar CV <i class="fa-solid fa-download"></i></a>
+                <a href="Currículum Vitae Ricardo Palomeque english.pdf">
+                Download CV <i class="fa-solid fa-download"></i></a>
                 <span class="overlay"></span>
             </button>
         </div>
@@ -182,7 +184,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Base de Datos</span>
+                        <span>Database</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>55%</span>
@@ -198,7 +200,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Soporte Técnico</span>
+                        <span>Technical Support</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
@@ -210,7 +212,7 @@
                 <div class="col">
                     <h3>Professional Skills</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span>Communication</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -218,7 +220,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span>Teamwork</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>90%</span>
@@ -226,7 +228,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span>Creativity</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -234,7 +236,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Ganas de Aprendizaje</span>
+                        <span>Desire to Learn</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -243,7 +245,7 @@
                     </div>
 
                     <div class="skill">
-                        <span>Capacidad de análisis</span>
+                        <span>Analysis capacity</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>90%</span>
@@ -252,7 +254,7 @@
                     </div>
 
                     <div class="skill">
-                        <span>Resolución de problemas</span>
+                        <span>Troubleshooting</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>90%</span>
@@ -261,7 +263,7 @@
                     </div>
 
                     <div class="skill">
-                        <span>Relaciones interpersonales</span>
+                        <span>Interpersonal relationships</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -270,7 +272,7 @@
                     </div>
 
                     <div class="skill">
-                        <span>Capacidad de Invetsigación</span>
+                        <span>Research Capacity</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -279,7 +281,7 @@
                     </div>
 
                     <div class="skill">
-                        <span>Actitud Positiva</span>
+                        <span>Positive Attitude</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -298,31 +300,31 @@
             <h2>Curriculum</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    <h3>Educación</h3>
+                    <h3>Education</h3>
                     <div class="item izq">
-                        <h4>Ingeniería en Software</h4>
-                        <span class="casa">Universidad de Las Fuerzas Armadas ESPE</span>
-                        <span class="fecha">Cursando actualmente</span>
-                        <p>Carrera enfocada en formar profesionales capaces de desarrollar y optimizar sistemas informáticos utilizando metodologías avanzadas y estándares internacionales.</p>
+                        <h4>Software Engineering</h4>
+                        <span class="casa">University of the Armed Forces ESPE</span>
+                        <span class="fecha">Currently studying</span>
+                        <p>Career focused on training professionals capable of developing and optimizing computer systems using advanced methodologies and international standards.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Bachillerato General Unificado</h4>
-                        <span class="casa">Unidad Educativa Madre De La Divina Gracia</span>
+                        <h4>Unified General Baccalaureate</h4>
+                        <span class="casa">Educational Unit Madre De La Divina Gracia</span>
                         <span class="fecha">2022</span>
-                        <p>Culminación del Bachillerato General Unificado, un programa educativo que proporciona formación integral en áreas como ciencias, humanidades y matemáticas. Durante tres años de estudio, desarrollé competencias académicas y técnicas, así como habilidades para la resolución de problemas, el trabajo en equipo y el pensamiento crítico, preparándome para la educación superior y el ámbito profesional.</p>
+                        <p>Completion of the Unified General Baccalaureate, an educational program that provides comprehensive training in areas such as sciences, humanities and mathematics. During three years of study, I developed academic and technical competencies, as well as problem-solving, teamwork and critical thinking skills, preparing me for higher education and the professional field.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Curso de Ethical Hacking</h4>
-                        <span class="casa">Academia Hacker Mentor</span>
-                        <span class="fecha">MZO 2024</span>
-                        <p>Curso de aprendizaje acerca del hacking ético y cyberseguridad basado en el aprendizaje con gaming.</p>
-                        <a href="Certificado Hacking Ético.pdf">CERTIFICADO<i class="fa-solid fa-download"></i></a>
+                        <h4>Ethical Hacking Course</h4>
+                        <span class="casa">Hacker Mentor Academy</span>
+                        <span class="fecha">March 2024</span>
+                        <p>Learning course about ethical hacking and cybersecurity based on learning with gaming.</p>
+                        <a href="Certificado Hacking Ético.pdf">CERTIFICATE<i class="fa-solid fa-download"></i></a>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -330,41 +332,41 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
+                    <h3>Work experience</h3>
                     <div class="item der">
-                        <h4>Pasante de Desarrollo en Software</h4>
+                        <h4>Software Development Intern</h4>
                         <span class="casa">Infinit Plus</span>
-                        <span class="fecha">04-04-2024 - 25/10/2024</span>
-                        <p>Como pasante de desarrollo de software, formé parte de un equipo dinámico y colaborativo donde trabajo bajo la guía de desarrolladores experimentados. Mi rol me permite participar activamente en proyectos innovadores, contribuyendo al diseño, desarrollo e implementación de soluciones en la plataforma Odoo.</p>
+                        <span class="fecha">04/04/2024 - 25/10/2024</span>
+                        <p>As a software development intern, I was part of a dynamic and collaborative team where I work under the guidance of experienced developers. My role allows me to actively participate in innovative projects, contributing to the design, development and implementation of solutions on the Odoo platform.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Polifuncional</h4>
+                        <h4>Multifunctional</h4>
                         <span class="casa">The crab's Carbón y Leña</span>
-                        <span class="fecha">Junio - Agosto 2022</span>
-                        <p>Responsable de la atención a clientes mediante el servicio de mesero, camarero, bartender y ayudante de cocina.</p>
+                        <span class="fecha">June - August 2022</span>
+                        <p>Responsible for customer service through the service of waiter, waiter, bartender and kitchen assistant.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
 
-                    <h3>Voluntariado</h3>
+                    <h3>Volunteering</h3>
                     <div class="item der">
-                        <h4>Voluntariado - Miembro activo</h4>
-                        <span class="casa">Asociación de Scouts del Ecuador</span>
-                        <span class="fecha">En. 2019 - Actualidad</span>
-                        <p>Participación en actividades grupales, organización y planificación de proyectos, realización de proyectos personales y grupales.</p>
+                        <h4>Volunteering - Active member</h4>
+                        <span class="casa">Scout Association of Ecuador</span>
+                        <span class="fecha">January. 2019 - Present</span>
+                        <p>Participation in group activities, organization and planning of projects, completion of personal and group projects.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Monitor</h4>
-                        <span class="casa">Cursos vacacionales Municipio de Quito</span>
-                        <span class="fecha">Sept. 2017 - Dic. 2018</span>
-                        <p>Responsable del cuidado, participación y animación tanto de niños y jóvenes durante los campamentos vacacionales organizados por el municipio de Quito.</p>
+                            <h4>Children's and youth recreation</h4>
+                        <span class="casa">Vacation courses Municipality of Quito</span>
+                        <span class="fecha">September 2017 - December 2018</span>
+                        <p>Responsible for the care, participation and animation of both children and young people during the holiday camps organized by the municipality of Quito.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -379,17 +381,17 @@
     <form action="https://formsubmit.co/brpalomequeo@gmail.com" method="POST">
         <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
+            <h2>CONTACT</h2>
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input name="name" type="text" placeholder="Tú Nombre">
-                    <input name="phone" type="text" placeholder="Número telefónico">
-                    <input name="email" type="text" placeholder="Dirección de correo">
-                    <input name="description" type="text" placeholder="Tema">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input name="name" type="text" placeholder="Your name">
+                    <input name="phone" type="text" placeholder="Telephone number">
+                    <input name="email" type="text" placeholder="Email address">
+                    <input name="description" type="text" placeholder="Affair">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        Send Message<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
 
@@ -407,7 +409,7 @@
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llámame: +593 98 978 4873
+                                Call me: +593 98 978 4873
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
