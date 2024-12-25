@@ -341,6 +341,51 @@ html{
     100%{width: 75%;}
 }
 
+.skills .skill .microsoft{
+    width: 0%;
+    animation: 2s microsoft forwards;
+}
+@keyframes microsoft {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .sharepoint{
+    width: 0%;
+    animation: 2s sharepoint forwards;
+}
+@keyframes sharepoint {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .onedrive{
+    width: 0%;
+    animation: 2s onedrive forwards;
+}
+@keyframes onedrive {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .cloud{
+    width: 0%;
+    animation: 2s cloud forwards;
+}
+@keyframes cloud {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .azure{
+    width: 0%;
+    animation: 2s azure forwards;
+}
+@keyframes azure {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+
 .skills .skill .comunicacion{
     width: 0%;
     animation: 2s comunicacion forwards;

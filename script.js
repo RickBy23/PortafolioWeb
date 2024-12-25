@@ -31,15 +31,20 @@ function efectoHabilidades(){
         habilidades[5].classList.add("basedatos");
         habilidades[6].classList.add("c");
         habilidades[7].classList.add("soporte");
-        habilidades[8].classList.add("comunicacion");
-        habilidades[9].classList.add("trabajo");
-        habilidades[10].classList.add("creatividad");
-        habilidades[11].classList.add("ganas");
-        habilidades[12].classList.add("analisis");
-        habilidades[13].classList.add("resolucion");
-        habilidades[14].classList.add("relaciones");
-        habilidades[15].classList.add("investigacion");
-        habilidades[16].classList.add("actitud");
+        habilidades[8].classList.add("microsoft");
+        habilidades[9].classList.add("sharepoint");
+        habilidades[10].classList.add("onedrive");
+        habilidades[11].classList.add("cloud");
+        habilidades[12].classList.add("azure");
+        habilidades[13].classList.add("comunicacion");
+        habilidades[14].classList.add("trabajo");
+        habilidades[15].classList.add("creatividad");
+        habilidades[16].classList.add("ganas");
+        habilidades[17].classList.add("analisis");
+        habilidades[18].classList.add("resolucion");
+        habilidades[19].classList.add("relaciones");
+        habilidades[20].classList.add("investigacion");
+        habilidades[21].classList.add("actitud");
     }
 }
 
@@ -54,7 +59,7 @@ let currentLanguage = localStorage.getItem('language') || 'en';
 // Cambiar el texto del botón basado en el idioma actual
 function actualizarBotonIdioma() {
     const button = document.getElementById('language-toggle');
-    button.textContent = currentLanguage === 'en' ? 'English' : 'Español';
+    button.textContent = currentLanguage === 'en' ? 'Spanish' : 'Inglés';
 }
 
 // Función para cambiar de idioma y redirigir a la página correspondiente
