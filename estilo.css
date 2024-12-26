@@ -347,7 +347,7 @@ html{
 }
 @keyframes microsoft {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .sharepoint{
@@ -374,7 +374,7 @@ html{
 }
 @keyframes cloud {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .azure{
